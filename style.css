@@ -1,0 +1,49 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(13, 13, 13);
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* background-image: url('./nebulaa.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+polyline {
+    /* stroke: white; */
+    fill: rgb(13, 13, 13);
+    /* filter: drop-shadow(0 0 5px yellow); */
+}
+
+#poliCent, #poliCent2 {
+    fill: transparent;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(63, 102, 231);
+    box-shadow: 0 0 5px rgb(115, 145, 241);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
